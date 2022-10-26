@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: "Staatliches", cursive;
+  --ff-secondary: "Palanquin", sans-serif;
+  
+    font-size: 62.5%;
+
+  --bg-color-primary: #eff1ff;
+  --bg-color-second: #8e9aaf;
+  --bg-color-third: #cbc0d3;
+  --bg-color-fourth: #feeafa;
+
+  --fc-primary: #ffffff;
+  --fc-secondary:#4A4E69;
+  --fc-third:#23053A;
+
+}
+
+.page {
+  max-width: 38.4rem;
+  margin: 0 auto;
+}
+
+body {
+  font-size: var(--fs-body);
+
+  background-color: var(--bg-color-primary);
+ 
+}
+
+header {
+  height: 27.9rem;
+  text-align: center;
+  font-family: var(--ff-primary);
+  background-color: var(--bg-color-second);
+}
+
+header img {
+  margin-top: 0.32rem;
+  margin-bottom: 0.14rem;
+}
+
+header h1 {
+  font-size: 4rem ;
+  font-weight: 400;
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  padding: 0.87rem 0;
+  background-color: var(--bg-color-third);
+  color: var(--fc-primary)
+  
+}
+
+
+Main p {
+  font-family: var(--ff-secondary);
+  font-size: 2rem;
+  color: var(--fc-third);
+  line-height: 1.5rem;
+  margin: 1.4rem 3.6rem 6.8rem;
+  text-align: center;
+}
+
+Main img {
+  width: 100%;
+  height: auto;
+
+}
+
+.card img  {
+  width: 100%; 
+  object-fit: fill;
+  border-radius: 0.8rem;
+}
+.card{
+  position: relative;
+}
+.card h2 {
+  font-family: var(--ff-primary);
+  font-size: 2.0rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+  
+  
+  color: var(--fc-secondary);
+  background-color: var(--bg-color-fourth);
+  border-radius: 2.0rem;
+  
+  padding: 0.1rem 2.4rem;
+  
+  position: absolute;
+
+  right: 1.6rem;
+  top: 1.6rem;
+
+  animation-name: textdown;
+  animation-duration: 1s;
+  animation-delay: 500ms;
+  animation-fill-mode: backwards;
+}
+
+.cards-wrapper{
+  display: grid;
+  gap: 3.2rem;
+  margin: 6.0rem 3.2rem;
+}
+
+.card {
+  animation-name: downtop;
+  animation-duration: 1.5s;
+  animation-fill-mode: backwards;
+
+}
+
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes textdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
